@@ -6,6 +6,10 @@
 
 :root {
     --fonte-android: "android", cursive;
+    --cor1: #3cdc84;
+    --cor2: #185232;
+    --cor-branco: #fff;
+    --cor-preto: rgba(0, 0, 0, 0.293);
 }
 
 * {
@@ -16,7 +20,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #3cdc84;
+    background-color: var(--cor1);
 }
 
 a.externo::after {
@@ -26,18 +30,15 @@ a.externo::after {
 header {
     color: white;
     text-align: center;
-    font: lighter 1.5em arial;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.293);
     background: linear-gradient(#3cdc84, #185232);
     width: 100%;
     box-sizing: border-box;
-    font: lighter 1em arial;
     margin: 0;
     padding: 0;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.449);
     min-height: 130px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding: 30px 0 10px 0;
 }
 
 header >h1 {
@@ -62,20 +63,20 @@ nav {
     padding: 0;
     width: 100%;
     font-weight: bolder;
-    background-color: #185232;
+    background-color: var(--cor2);
     box-shadow: 0 7px 9px rgba(0, 0, 0, 0.27);
 }
 nav > a {
     display: inline-block;
     padding: 10px;
     font-weight: bolder;
-    color: white;
+    color: var(--cor-branco);
     text-decoration: none;
     transition-duration: 0.5s;
 }
 
 nav > a:hover {
-    background-color: #3cdc84;
+    background-color: var(--cor1);
 }
 
 main {
@@ -90,8 +91,7 @@ main {
 }
 
 div.video {
-    background-color: #185232;
-    margin: 20px;
+    background-color: var(--cor2);
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 50%;
@@ -117,7 +117,7 @@ main img {
 
 main a {
     text-decoration: none;
-    background-color: #3cdc84;
+    background-color: var(--cor1);
 
 }
 
@@ -142,12 +142,11 @@ h4 {
     background-color: #3b7053;
     margin: -20px -20px 0px -20px;
     padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 #adicional {
-    background-color: #3cdc8435;
+    background-color: #3cdc8426;
     margin: 0;
     border-radius: 10px;
     padding: 20px;
@@ -179,8 +178,5 @@ footer {
     margin-top: 20px;
     color: white;
     text-align: center;
-    background-color: #185232;
+    background-color: #3b7053;
 }
-
-
-    
